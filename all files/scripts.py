@@ -1,9 +1,5 @@
 def calculo_imc():
     """
-    :param alt: Entrada da altura da pessoa
-    :param pes: Entrada do peso da pessoa
-    :param gen: Genero da Pessoa
-    :param idade: Idade da pessoa
     :return: Retorna o resultado do calculo do IMC
     """
     from PySimpleGUI import PySimpleGUI as sg
@@ -61,9 +57,9 @@ def calculo_imc():
             if (imc >= 32.4):
                 situacao = ('Obesidade')
         else:
-            situacao =("Algum parametro foi digitado incorretamente, não foi possivel definir sua Situação corretamente")
+            situacao = ("Algum parametro foi digitado incorretamente, não foi possivel definir sua Situação corretamente")
     else:
-        situacao =("Parametros Incorretos!")
+        situacao = ("Parametros Incorretos!")
     return imc, situacao, nome
 
 def resultados():
