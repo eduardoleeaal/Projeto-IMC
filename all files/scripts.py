@@ -10,7 +10,6 @@ def calculo_imc():
         [sg.Text('Nome: '), sg.Input(key = '_nome', size = (20, 1))],
         [sg.Text('Altura (cm): '), sg.Input(key = '_altura', size = (20, 1))],
         [sg.Text('Peso (Kg): '), sg.Input(key = '_peso', size = (20, 1))],
-        [sg.Text('Idade: '), sg.Input(key = '_idade', size = (20, 1))],
         [sg.Text('Sexo: '), sg.OptionMenu(values=['M', 'F'], size = (4, 1), default_value = 'M', key = '_sexo')],
         [sg.Button('Entrar')]
     ]
@@ -25,12 +24,11 @@ def calculo_imc():
         nome = valores['_nome']
         alt = str(valores['_altura'])
         pes =  str(valores['_peso'])
-        idade = str(valores['_idade'])
         gen = str(valores['_sexo']).upper()
 
         break
 #############################################################################################################
-    if alt.isnumeric() and pes.isnumeric() and gen != '' and idade.isnumeric():
+    if alt.isnumeric() and pes.isnumeric() and gen != '':
 
         imc = float(pes) / (float(alt) / 100) ** 2
 
