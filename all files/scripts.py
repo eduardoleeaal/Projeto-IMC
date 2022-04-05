@@ -10,7 +10,7 @@ def calculo_imc():
         [sg.Text('Nome: '), sg.Input(key = '_nome', size = (20, 1))],
         [sg.Text('Altura (cm): '), sg.Input(key = '_altura', size = (20, 1))],
         [sg.Text('Peso (Kg): '), sg.Input(key = '_peso', size = (20, 1))],
-        [sg.Text('Sexo: '), sg.OptionMenu(values=['M', 'F'], size = (4, 1), default_value = 'M', key = '_sexo')],
+        [sg.Text('Sexo: '), sg.OptionMenu(values=['Masculino', 'Feminino'], size = (8, 1), default_value = '', key = '_sexo')],
         [sg.Button('Entrar')]
     ]
 
