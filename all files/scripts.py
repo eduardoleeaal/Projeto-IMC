@@ -1,6 +1,8 @@
 def calculo_imc():
     """
     :return: Retorna o resultado do calculo do IMC
+    :return: Retorna a Situação da pessoa com base no IMC
+    :return: O nome da Pessoa cadastrada
     """
     from PySimpleGUI import PySimpleGUI as sg
     
